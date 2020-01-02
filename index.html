@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alata|Chelsea+Market&display=swap" rel="stylesheet">
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+    <title>maitai catamaran</title>
+  </head>
+  <body>
+    <main>
+      <nav class="main-nav" id="main-nav">
+      <section>
+        <ul>
+          <li><a class="parentAnchor" href="#">home</a></li>
+          <li><a class="parentAnchor" href="#">about us</a></li>
+          <li><a class="parentAnchor" href="#">blog</a></li>
+          <li><a class="parentAnchor" href="#">contact</a></li>
+          <li><a class="parentAnchor" href="#">cart</a></li>
+        </ul>
+      </section>
+      </nav>
+      <div class="wrapper" id="wrapper">
+        <!-- ================ -->
+        <div class="masthead">
+          <div class="phone">
+            <ul>
+              <li>
+                <span>(Toll Free)</span>
+                <a href="#">1-866-482-9775</a>
+              </li>
+              <li>
+                <span>(Local)</span>
+                <a href="#">808-892-2082</a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" name="button" class="menu-btn" onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+            <hr class="menu-btn-hr-1"/>
+            <hr class="menu-btn-hr-2"/>
+            <hr class="menu-btn-hr-3"/>
+          </button>
+          <button type="button" id="cart-btn"><i class="material-icons">shopping_cart</i></button>
+          <div id="logo">
+            <a href="#">
+              <img src="images/logo.png" alt="">
+              <h1>maita'i<span>catamaran</span></h1>
+            </a>
+          </div>
+          <h2>presented by hawaii discount</h2>
+        </div>
+      <!-- ================ -->
+        <div id="gallery">
+          <section id="gallery-section">
+            <img src="images/maitaiImg.png" alt="" class="gallery-image">
+            <img src="images/banner.jpg" alt="" class="gallery-image">
+            <img src="images/maitaiImg2.png" alt="" class="gallery-image">
+            <img src="images/Maitai Catamaran Sunset Sail.jpg" alt="" class="gallery-image">
+            <img src="images/Screen Shot 2019-12-28 at 12.46.23 AM.png" alt="" class="gallery-image">
+            <img src="images/catamaran_img.jpg" alt="" class="gallery-image">
+          </section>
+        </div>
+      <!-- ================ -->
+        <div id="banner">
+          <header>
+            <h3>discounts on maitai catamaran reservations</h3>
+            <button type="button" name="button">reserve now</button>
+          </header>
+        </div>
+      <!-- ================ -->
+        <div class="article-section">
+          <hr />
+          <header>tagline goes here</header>
+          <p>Come aboard the Maita'i Catamaran for an ocean adventure unlike any other. Sailing daily along Waikiki Beach on Oahu's beautiful south shore, this is a fun sightseeing cruise and party all in one! Enjoy spectacular photo opportunities with views of Honolulu, Waikiki and Diamond Head. Relax on the spacious sundeck while sipping a refreshing beverage of your choice (e.g. beer, tropical cocktail, wine, juice or soft drink)</p>
+          <p>The Maita'i is a state-of-the-art 44-foot catamaran that seats 47 passengers comfortably. It is United States Coast Guard inspected and certified. Choose from the following four Oahu sailing adventures.</p>
+          <hr />
+        </div>
+<!-- ================ -->
+        <div class="product-section">
+          <h3>maitai catamaran sails</h3>
+          <!-- ============== -->
+          <div class="product">
+            <div class="product-image">
+              <img src="images/tradewind_banner.jpg" alt="">
+            </div>
+            <article>
+              <h2>Tradewinds Sail</h2>
+              <ul>
+                <li>retail<span class="strike">$00.00</span></li>
+                <li class="p-price">discount<span class="span-1">$00.00</span></li>
+                <li>save<span class="span-2">$00.00</span></li>
+              </ul>
+              <a href="#" onclick="idToggle('product-1', 'active');return false;">learn more</a>
+              <a href="#">book now</a>
+            </article>
+          </div>
+          <!-- ============== -->
+          <div class="product">
+            <div class="product-image">
+              <img src="images/sunset_img.jpg" alt="">
+            </div>
+            <article>
+              <h2>Sunset Sail</h2>
+              <ul>
+                <li>retail<span class="strike">$00.00</span></li>
+                <li class="p-price">discount<span class="span-1">$00.00</span></li>
+                <li>save<span class="span-2">$00.00</span></li>
+              </ul>
+              <a href="#" onclick="idToggle('product-2', 'active');return false;">learn more</a>
+              <a href="#">book now</a>
+            </article>
+          </div>
+          <!-- ============== -->
+          <div class="product">
+            <div class="product-image">
+              <img src="images/moonlight_sail.jpg" alt="">
+            </div>
+            <article>
+              <h2>Moonlight Sail</h2>
+              <ul>
+                <li>retail<span class="strike">$00.00</span></li>
+                <li class="p-price">discount<span class="span-1">$00.00</span></li>
+                <li>save<span class="span-2">$00.00</span></li>
+              </ul>
+              <a href="#">learn more</a>
+              <a href="#">book now</a>
+            </article>
+          </div>
+          <!-- ============== -->
+          <div class="product-detail" id="product-1">
+            <div class="product-detail-section">
+              <header>Tradewinds Sail</header>
+              <article>
+                <p>Experience a classic sailing adventure along Waikiki Beach. This tradewinds sail shows you what the modern and ultra-sleek Maita'i catamaran can do! The wind and waves rush by while you enjoy the spectacular views of Waikiki and Diamond Head. Unwind with a tropical drink, enjoy the ocean breeze and look out for marine life, including turtles and humpback whales during the winter whale watch season.</p>
+              </article>
+            </div>
+          </div>
+          <!-- ============== -->
+          <div class="product-detail" id="product-2">
+            <div class="product-detail-section">
+              <header>Sunset Sail</header>
+              <article>
+                <p>Looking for something a bit more romantic? Then come aboard for Maita'i Catamaran's sunset sail. Leave your shoes behind, barefoot board right on Waikiki Beach, sail out through the surf line and leave the hustle and bustle of the city behind. Sit back and enjoy the island's beauty and watch the sun dip below the horizon coloring the ocean and sky in a rainbow of colors. Sip a beer, wine or tropical cocktail while marveling at Oahu's scenic south shore.</p>
+              </article>
+            </div>
+          </div>
+          <!-- ============== -->
+          <div class="product-detail" id="product-3">
+            <div class="product-detail-section">
+              <header>Moonlight Sail</header>
+              <article>
+                <p>Sail by the light of the moon while the stars guide your way on this romantic evening sail along Waikiki Beach.  Enjoy the views of the city night lights in the distance as you glide across the deep blue sea with Mahina (Hawaiian for "moon"). It's a feeling unlike any other! This sail comes complete with the usual beverages, but with the magical night sky as the backdrop. With this tour running only on Fridays (and other special nights), it's the perfect way to watch Waikiki's Friday night fireworks.</p>
+              </article>
+            </div>
+          </div>
+          <!-- ============== -->
+        </div>
+<!-- ================ -->
+<!-- ================ -->
+        <div class="product-special">
+          <div class="product">
+            <div class="product-image">
+              <img src="images/newyearsail.jpg" alt="">
+            </div>
+            <article>
+              <h2>seasonal sails</h2>
+              <p>celebrate something with fireworks seo language goes here</p>
+              <a href="#">fourth of july</a>
+              <a href="#">new years eve</a>
+            </article>
+          </div>
+        </div>
+<!-- ================ -->
+        <div class="coverage-section">
+          <h2>we've got you covered</h2>
+          <ul>
+            <li id="c-1">
+              <span>
+              <i class="material-icons icon-first">laptop</i>
+              <i class="material-icons icon-second">lock</i>
+              </span>
+              <header>safe and<br/>secure</header>
+              <p>Online booking system with validated privacy protection</p>
+            </li>
+            <li id="c-2">
+              <span>
+                <i class="material-icons icon-first">event</i>
+                <i class="material-icons icon-second">call</i>
+              </span>
+              <header>money back<br/>guranteed</header>
+              <p>Receive a full refund if cancellation is made at least 48 hours in advance (2 weeks for parties of 20 or more)</p>
+            </li>
+            <li id="c-3">
+              <span>
+                <i class="material-icons icon-first">sentiment_satisfied_alt</i>
+              </span>
+              <header>friendly<br/>support</header>
+              <p>Receive your voucher the same day after booking your activity</p>
+            </li>
+            <li id="c-4">
+              <span>
+                <i class="material-icons icon-first">undo</i>
+                <i class="material-icons icon-second">attach_money</i>
+              </span>
+              <header>money back<br/>guranteed</header>
+              <p>Our representatives will help you select the best activities and ensure 100% satisfaction</p>
+            </li>
+          </ul>
+        </div>
+      <!-- ================================================================================ -->
+      <footer class="footer">
+        <header>
+          <div id="logo-footer">
+            <a href="#">
+              <img src="images/logo.png" alt="">
+              <h2>maita'i<span>catamaran</span></h2>
+            </a>
+          </div>
+        </header>
+        <div class="social">
+          <p>follow us</p>
+          <a class="facebook-social" href="https://www.facebook.com/HawaiiDiscount"></a>
+          <a class="twitter-social" href="https://twitter.com/hawaiidiscount"></a>
+          <a class="youtube-social" href="https://www.youtube.com/hawaiidiscount"></a>
+          <a class="pinterest-social" href="https://www.pinterest.com/hawaiidiscount/"></a>
+        </div>
+        <section>
+          <ul>
+            <li><b>navigation</b></li>
+            <li> <a href="#">home</a> </li>
+            <li> <a href="#">contact</a> </li>
+            <li> <a href="#">about us</a> </li>
+            <li> <a href="#">cart</a> </li>
+          </ul>
+          <ul>
+            <li><b>site info</b></li>
+            <li> <a href="#">faq</a> </li>
+            <li> <a href="#">site map</a> </li>
+            <li> <a href="#">privacy policy</a> </li>
+            <li> <a href="#">terms</a> </li>
+            <li> <a href="#">login</a> </li>
+          </ul>
+        </section>
+        <p>Copyright (c) 2019 hawaii discount All Rights Reserved.</p>
+      </footer>
+      <!-- ============================================================  -->
+      </div>
+    </main>
+    <script type="text/javascript" src="checkpoint.js"></script>
+    <script type="text/javascript" src="toggle.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+    var $eventListener = (function() {
+      'use strict';
+      if("ontouchstart" in document.documentElement === true){
+        return "touchstart"
+      }else{
+        return "click";
+      }
+    }());
+    var menuCont = document.getElementById("main-nav");
+    var menuBtn = document.getElementById("menu-btn");
+    console.log(menuCont.offsetWidth);
+    document.addEventListener($eventListener,function(event){
+      if(!menuCont.contains(event.target) && !visible(menuCont)){
+        menuCont.className = "main-nav";
+        menuBtn.className = "menu-btn";
+      }
+    })
+
+    function visible(elem){
+      return elem && (elem.offsetWidth === 0) ;
+    }
+    // =================
+    </script>
+  </body>
+</html>
